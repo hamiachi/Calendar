@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color: white;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar Year</title>
+    <link rel="stylesheet" href="styles.css" />  
+  </head>
+<body>
+
+  <div>
+    <div class="date" id="date">
+      <button class="dateBtn" id="dateBtn"></button>
+    </div>
+    <div class="days-months-years" id="days-months-years">
+      <button class="dmy" id="dmy" onclick="day2month(2024)"></button>
+      <button class="my" id="my" onclick="month2year(2024)"></button>
+      <button class="my" id="y"></button>
+      <div class="bt">
+        <button class="bt1" onclick="preMonth()">
+          <img src="/calen/UP.jpg">
+        </button>
+        <button class="bt2" onclick="nextMonth()">
+          <img src="/calen/DOWN1.jpg">
+        </button>
+      </div>
+    </div>
+    <table id="head" style="margin: 0; margin-top:0;">
+      <tr>
+        <th>Su</th>
+        <th>Mo</th>
+        <th>Tu</th>
+        <th>We</th>
+        <th>Th</th>
+        <th>Fr</th>
+        <th>Sa</th>
+      </tr>
+    </table>
+  </div>
+  <div class="scroll-container" id="scroll-container">
+    <div id="calendar"></div>
+    <div id="monthCalendar"></div>
+    <div id="yearCalendar"></div>
+  </div>
+  <div class="timer" id="timer">
+    <div class="setTime">
+      <button onclick="lessTime()">-</button>
+      <div class="timeSet"><b><span id="focus">30</span></b> mins</div>
+      <button onclick="moreTime()">+</button>
+    </div>
+    <button class="focus" onclick="outOfOrder()">
+      <img src="/calen/start.jpg">
+      <div>Focus</div>
+    </button>
+  </div>
+  <script src="/main.js"></script>
+</body>
+</html>
