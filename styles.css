@@ -316,7 +316,7 @@ th {
 .selectDay {
   background-color: #363636 !important;
   color: #8BC7C9 !important;
-  border: 2px solid #65B8BF !important;
+  border: 1px solid #4CC2FF !important;
 }
 
 .active {
